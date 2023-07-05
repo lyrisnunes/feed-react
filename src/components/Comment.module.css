@@ -1,0 +1,61 @@
+.comment{
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem; 
+}
+
+.comment img {
+   width: 3.5rem;
+   height: 3.5rem;
+   border-radius: 8px;
+}
+
+.commentBox{
+   flex: 1;
+}
+
+.commentContent{
+   background: var(--gray-700);
+   border-radius: 8px;
+   padding: 1rem;
+}
+
+.commentContent header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.authorAndTime strong{
+   display: block;
+   font-size: 0.87rem;
+   line-height: 1.9;
+}
+
+.authorAndTime time{
+   display: block;
+   font-size: 0.87rem;
+   color: var(--gray-300);
+   line-height: 1.6;
+}
+
+.commentContent header button{
+   background: var(--green-500);
+   padding: 8px;
+   border-radius: 5px;
+   border: 0;
+   color: var(--gray-400);
+   cursor: pointer;
+}
+
+.commentBox footer{
+   margin-top: 1rem;
+}
+
+button{
+   background: var(--green-500);
+   border: 0;
+   padding: 8px;
+   border-radius: 5px;
+   cursor: pointer;
+}

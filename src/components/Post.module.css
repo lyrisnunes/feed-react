@@ -44,12 +44,7 @@
    align-items: center;
    gap: 1rem;
 }
-.author img{
-   width: 3.5rem;
-   height: 3.5rem;
-   border-radius: 8px;
-   border: 2px solid var(--green-100);
-}
+
 .authorInfo strong{
    display: block;
    color: var(--gray-100);

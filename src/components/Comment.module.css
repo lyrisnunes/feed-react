@@ -4,12 +4,6 @@
   gap: 1rem; 
 }
 
-.comment img {
-   width: 3.5rem;
-   height: 3.5rem;
-   border-radius: 8px;
-}
-
 .commentBox{
    flex: 1;
 }

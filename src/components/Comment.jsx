@@ -1,9 +1,10 @@
+import { Avatar } from "./Avatar";
 import styles from "./Comment.module.css";
 
 export function Commment() {
   return (
     <div className={styles.comment}>
-      <img src="https://github.com/lyrisnunes.png" />
+      <Avatar  src="https://github.com/lyrisnunes.png"/>
 
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>

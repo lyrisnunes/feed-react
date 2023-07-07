@@ -1,6 +1,7 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-import styles from './Sidebar.module.css'
+import styles from './Sidebar.module.css';
+import { Avatar } from "./Avatar";
 
 export function Sidebar(){
    return(
@@ -8,7 +9,7 @@ export function Sidebar(){
          <img className={styles.cover} src="https://images.unsplash.com/photo-1439405326854-014607f694d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"/>
 
          <div className={styles.profile}>
-            <img className={styles.avatar} src="https://github.com/lyrisnunes.png"/>
+            <Avatar hasBorder src="https://github.com/lyrisnunes.png"/>
             <strong>Lyris Nunes</strong>
             <span>Programadora React</span>
             <ul className={styles.language}>

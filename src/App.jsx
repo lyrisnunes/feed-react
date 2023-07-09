@@ -29,7 +29,7 @@ const posts = [
     role: 'Programadora Front End'
   },
   content:[
-    {type: 'paragraph', content: 'Fala galeraa 👋' },
+    {type: 'paragraph', content: 'Fala galera 👋' },
     {type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portfólio, vão lá ver.'},
     {type: 'link', content: 'jane.design/doctorcare'},
   ],
@@ -49,6 +49,7 @@ export function App(){
           {posts.map(post =>{
             return(
               <Post
+              key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}

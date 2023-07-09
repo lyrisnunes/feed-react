@@ -1,7 +1,22 @@
+import { useState } from "react";
 import { Avatar } from "./Avatar";
 import styles from "./Comment.module.css";
 
-export function Commment() {
+export function Commment({content, onDeleteComment}) {
+
+  const [like, setLikeCount] = useState(0)
+
+  function handleDeletarComment(){
+    onDeleteComment(content);
+  }
+
+  function handleLikeHere(){
+    setLikeCount((state) => {
+      return state + 1
+    });
+
+  }
+
   return (
     <div className={styles.comment}>
       <Avatar  src="https://github.com/lyrisnunes.png"/>
@@ -16,17 +31,17 @@ export function Commment() {
               </time>
             </div>
 
-            <button title="Deletar comentário">
+            <button onClick={handleDeletarComment} title="Deletar comentário">
                Deletar
             </button>
           </header>
 
-          <p>Muito bom, parabéns!!</p>
+          <p>{content}</p>
         </div>
 
         <footer>
-         <button>
-            Curtir <span>20</span>
+         <button onClick={handleLikeHere}>
+            Curtir <span>{like}</span>
          </button>
         </footer>
       </div>
